@@ -27,7 +27,7 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
       hoursPerDay: {
-        type: DataTypes.REAL,
+        type: DataTypes.TIME,
         allowNull: true,
       },
       type: {
@@ -37,7 +37,7 @@ module.exports = (sequelize) => {
     },
     {
       timestamps: true,
-    },
-    { paranoid: true }
+      paranoid: true,
+    }
   );
 };
