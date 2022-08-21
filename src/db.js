@@ -90,7 +90,7 @@ Staff.belongsToMany(Rol, {
 });
 
 //DESCOMENTAR ESTO
-/* module.exports = {
+module.exports = {
   ...sequelize.models, // para poder importar los modelos así: const { Product, User } = require('./db.js');
-  conn: sequelize,     // para importart la conexión { conn } = require('./db.js');
-}; */
+  conn: sequelize, // para importart la conexión { conn } = require('./db.js');
+};
