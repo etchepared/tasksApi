@@ -6,7 +6,7 @@ module.exports = (sequelize) => {
   sequelize.define(
     "taskmanager",
     {
-      idRol: {
+      id: {
         type: DataTypes.UUID,
         allowNull: false,
         primaryKey: true,
@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
     },
     {
       timestamps: true,
-    },
-    { paranoid: true }
+      paranoid: true,
+    }
   );
 };
